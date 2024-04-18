@@ -1,10 +1,14 @@
-public abstract class Livro implements Produto{
+package br.com.casadocodigo.livraria.produtos;
+
+import br.com.casadocodigo.livraria.Autor;
+
+public abstract class Livro implements Produto {
 
     private String nome;
     private String descricao;
     private double valor;
     private String isbn;
-    private Autor autor; //A classe autor pode ser um atributo da classe Livro
+    private Autor autor; //A classe autor pode ser um atributo da classe br.com.casadocodigo.livraria.produtos.Livro
 
     public Livro(Autor autor){
         this.autor = autor;
@@ -17,7 +21,7 @@ public abstract class Livro implements Produto{
         return this.autor != null;
     }
 
-    void mostrarDetalhes(){
+    public void mostrarDetalhes(){
         System.out.println("Mostrando detalhes do livro");
         System.out.println("Nome: " + nome);
         System.out.println("Descrição: " + descricao);

@@ -1,3 +1,8 @@
+package br.com.casadocodigo.livraria.testes;
+
+import br.com.casadocodigo.livraria.Autor;
+import br.com.casadocodigo.livraria.produtos.LivroFisico;
+
 public class RegistroDeVendas {
 
     public static void main(String[] args) {
@@ -12,7 +17,7 @@ public class RegistroDeVendas {
             System.out.println("O valor agora é: " + fisico.getValor());
         }
 
-//        Ebook ebook = new Ebook(autor);
+//        br.com.casadocodigo.livraria.produtos.Ebook ebook = new br.com.casadocodigo.livraria.produtos.Ebook(autor);
 //        ebook.setNome("Test-Driven Development");
 //        ebook.setValor(29.90);
 
