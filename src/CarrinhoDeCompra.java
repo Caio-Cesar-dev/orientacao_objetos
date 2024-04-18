@@ -1,11 +1,11 @@
 public class CarrinhoDeCompra {
 
     private double total;
-
-    public void adiciona(Livro livro){
-        System.out.println("Adicionando: " + livro);
-        livro.aplicaDescontoDe(5);
-        total += livro.getValor();
+    //estamos usando o polimorfismo
+    public void adiciona(Produto produto){
+        System.out.println("Adicionando: " + produto);
+        //livro.aplicaDescontoDe(5);
+        total += produto.getValor();
     }
 
     public double getTotal() {

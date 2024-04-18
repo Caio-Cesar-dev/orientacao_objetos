@@ -1,4 +1,4 @@
-public class Livro {
+public abstract class Livro implements Produto{
 
     private String nome;
     private String descricao;
@@ -27,14 +27,6 @@ public class Livro {
             autor.mostrarDetlhes();
         }
         System.out.println("--------------------");
-    }
-
-    public boolean aplicaDescontoDe(double porcentagem){
-        if (porcentagem > (30)){
-            return false;
-        }
-        this.valor -= this.valor * (porcentagem/100);
-        return true;
     }
 
     public String getNome() {

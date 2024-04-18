@@ -2,13 +2,14 @@ public class RegrasDeDesconto {
     public static void main(String[] args) {
 
         Autor autor = new Autor();
-        Livro livro = new Livro(autor);
+        autor.setNome("Rodrigo Turini");
+        LivroFisico livro = new LivroFisico(autor);
 
-        livro.setValor(59.90);
+        livro.setValor(39.90);
 
         System.out.println("Valor atual: R$ " + livro.getValor());
 
-        if(!livro.aplicaDescontoDe(25)){
+        if(!livro.aplicaDescontoDe(0.3)){
             System.out.println("Desconto não pode ser maior que 30%");
         }else {
             System.out.println("Valor com desconto: " + livro.getValor());
