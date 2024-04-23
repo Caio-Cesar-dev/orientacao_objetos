@@ -2,8 +2,11 @@ package br.com.casadocodigo.livraria.testes;
 
 import br.com.casadocodigo.livraria.Autor;
 import br.com.casadocodigo.livraria.produtos.LivroFisico;
+import br.com.casadocodigo.livraria.produtos.Produto;
 
-public class RegistroDeVendas {
+import java.util.List;
+
+public class RegistroDeVendas implements Produto{
 
     public static void main(String[] args) {
 
@@ -28,6 +31,21 @@ public class RegistroDeVendas {
 
         System.out.println("total: " + carrinho.getTotal());
 
+        List<Produto> produtos = carrinho.getProdutos();
 
+        for (Produto produto: produtos){
+            System.out.println(produto);
+        }
+
+    }
+
+    @Override
+    public double getValor() {
+        return 0;
+    }
+
+    @Override
+    public int compareTo(Produto outro) {
+        return 0;
     }
 }
